@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background: url("../img/b2.jpg") no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-backgrond-size:cover;
+    -o-background-size:cover;
+    font-family: 'Roboto';
+    background-size: cover;
+}
+
+.contain{
+    /* padding-top: 30px; */
+    width: calc(80%);
+    background: rgb(34,193,195);
+    background: linear-gradient(45deg, rgba(34,193,195,1) 10%, rgba(255,157,0,1) 90%);
+    position: fixed;
+    top:calc(50%);
+    left: calc(50%);
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 20px;
+    height: calc(70%); 
+    z-index: -1;
+        
+}
+
+.contain .element{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.contain .element:hover{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+form{
+    height: 100%;
+}
+
+
+h2{
+    text-align: center;
+    font-size:5vh;
+}
+
+label{
+    text-align:left;
+    font-size: 4vh;
+}
+
+input[type=text],[type=password],[type=number]{
+    width: 100%;
+    margin: 8px 0;
+    padding: 7px 10px;
+    display: inline-block;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+button{
+    background: rgb(20,213,99);
+    background: linear-gradient(90deg, rgba(20,213,99,1) 0%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    padding: 9px 5px;
+    margin:5px 0;
+    cursor:pointer;
+    border:none;
+    color:#ffffff;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 3vh; 
+
+}
+button:hover{
+    background: rgb(20,213,99);
+    background: linear-gradient(90deg, rgb(0, 139, 58) 0%, rgb(2, 113, 165) 100%);
+}

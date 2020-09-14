@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url("../static/img/b3.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main_1{
+            width: 100%;
+            height: auto;
+            background-color: #0606065e;
+            display: flex;
+            border-radius: 20px;
+            color: #fff;
+            text-align: left;
+        }
+        .main_1 .left{
+            width: 80%;
+            float: left;
+            /* background-color: blue; */
+            padding: 10px;
+        }
+        .main_1 .right{
+            width: 20%;
+            float: right;
+            /* background-color:brown; */
+            padding: 10px;
+        }
+
+        .img_container{
+            width: 100%;
+            height: auto;
+            background-color: #00000082;
+            margin-top: 10px;
+            padding-bottom: 40px;
+            border-radius: 20px;
+            display: flex;
+        }
+        .img_container .left{
+            width: 80%;
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px; 
+        }
+        .img_container .left img{
+            width: 100%;
+            display: block;
+
+        }
+
+        .img_container .right{
+            width: 20%;
+            float: right;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            color: #fff; 
+        }
+
+        .img_container .right p{
+            top: 50%;
+            position: relative;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="main_1">
+        <div class="left">
+            <h5>Expected Return : {{exp_ret}}</h5><br>
+            <h5>Expected Volatilaut : {{exp_vol}}</h5><br>
+            <h5>Sharp Ratio: {{SR}}</h5><br>
+        </div>
+        <div class="right">
+            C1={{a1}} <br>
+            C2={{a2}} <br>
+            C3={{a3}} <br>
+            C4={{a4}} <br>
+            C5={{a5}} <br>
+            C6={{a6}} <br>
+            C7={{a7}} <br>
+            C8={{a8}} <br>
+        </div>
+
+    </div>
+
+    <div class="img_container"> 
+        <div class="left">
+            <img src="{{ url_for('static',    filename='total_portfolio_value_g1.png') }}" alt="" srcset="">
+            <!-- <img src="../static/total_portfolio_value_g1.png" > -->
+        </div>
+        <div class="right">
+            <p>THIS GRAPH SHOWS VOLATALITY OF PORFOLIO</p>
+        </div>
+    </div>
+
+    <div class="img_container">
+
+        <div class="left">
+            <img src="{{ url_for('static',    filename='portfolio_value_drop_g2.png') }}" alt="" srcset="">
+            <!-- <img src="../static/portfolio_value_drop_g2.png" > -->
+        </div>
+
+        <div class="right">
+            <p>INDIVIDUAL GROWTH OF EACH COMPANY</p>
+        </div>
+    </div>
+
+
+    <div class="img_container">
+        <div class="left">
+            <img src="{{ url_for('static',    filename='stock_normed_g3.png') }}" alt="" srcset="">
+            <!-- <img src="../static/stock_normed_g3.png" > -->
+        </div>
+
+        <div class="right">
+            <p>NORMALIZED DATA OF PORTFOLIO</p>
+        </div>
+    </div>
+
+    <div class="img_container">
+        <div class="left">
+            <img src="{{ url_for('static',    filename='Sharp_Value_g4.png') }}" alt="" srcset="">
+            <!-- <img src="../static/Sharp_Value_g4.png" > -->
+        </div>
+
+        <div class="right">
+            <p>SHARP VALUE OF PORTFOLIO</p>
+        </div>
+    </div>
+
+
+    <div class="img_container">
+        <div class="left">
+            <img src="{{ url_for('static',    filename='optimized_g5.png') }}" alt="" srcset=""> 
+            <!-- <img src="../static/optimized_g5.png" >          -->
+        </div>
+
+        <div class="right">
+            <p>OPTIMIZED VALUES</p>
+        </div>
+   
+    </div>
+</div>
+</body>
+</html>
